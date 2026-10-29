@@ -97,35 +97,12 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
             fontSize: 'clamp(0.62rem, 1.4vw, 0.68rem)',
             color: 'var(--color-soft-wine)',
             display: 'block',
-            marginBottom: '0.85rem',
+            marginBottom: '1.25rem',
             letterSpacing: '0.2em',
           }}
         >
           A PROMISE IN FAITH · FAMILY · LOVE
         </span>
-
-        {/* Islamic Wedding Label */}
-        <div
-          style={{
-            display: 'inline-block',
-            padding: '0.25rem 0.9rem',
-            backgroundColor: 'rgba(197, 164, 109, 0.12)',
-            border: '1px solid rgba(197, 164, 109, 0.35)',
-            marginBottom: '1rem',
-          }}
-        >
-          <span
-            className="font-mono-meta"
-            style={{
-              fontSize: '0.65rem',
-              color: 'var(--color-burgundy)',
-              fontWeight: 700,
-              letterSpacing: '0.2em',
-            }}
-          >
-            ISLAMIC WEDDING
-          </span>
-        </div>
 
         {/* Bismillah in Almarai Font */}
         <p
@@ -133,10 +110,10 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
           lang="ar"
           className="font-arabic-calligraphy"
           style={{
-            fontSize: 'clamp(1.15rem, 3.2vw, 1.55rem)',
+            fontSize: 'clamp(1.2rem, 3.5vw, 1.65rem)',
             color: 'var(--color-champagne-gold)',
             lineHeight: 1.8,
-            marginBottom: '0.75rem',
+            marginBottom: '1rem',
             fontWeight: 400,
           }}
         >
@@ -144,11 +121,11 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
         </p>
 
         {/* Couple Names */}
-        <div style={{ margin: '0.75rem 0 1.25rem' }}>
+        <div style={{ margin: '1rem 0 1.5rem' }}>
           <h1
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(1.9rem, 6.5vw, 3.25rem)',
+              fontSize: 'clamp(2rem, 6.8vw, 3.4rem)',
               color: 'var(--color-burgundy)',
               lineHeight: 1.1,
               letterSpacing: '0.01em',
@@ -166,7 +143,7 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
               alignItems: 'center',
               justifyContent: 'center',
               gap: '0.8rem',
-              margin: '0.5rem 0',
+              margin: '0.6rem 0',
             }}
           >
             <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, var(--color-champagne-gold))' }} />
@@ -195,7 +172,7 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
           <h2
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(1.9rem, 6.5vw, 3.25rem)',
+              fontSize: 'clamp(2rem, 6.8vw, 3.4rem)',
               color: 'var(--color-burgundy)',
               lineHeight: 1.1,
               letterSpacing: '0.01em',
@@ -207,32 +184,19 @@ export const OpeningVeil: React.FC<OpeningVeilProps> = ({ onOpen }) => {
           </h2>
         </div>
 
-        {/* Date & Weekday */}
-        <div style={{ marginBottom: '1.75rem' }}>
-          <p
-            className="font-mono-meta"
-            style={{
-              fontSize: 'clamp(0.75rem, 2.4vw, 0.85rem)',
-              color: 'var(--color-ink)',
-              fontWeight: 700,
-              letterSpacing: '0.16em',
-            }}
-          >
-            {WEDDING_DETAILS.weekday.toUpperCase()} · {WEDDING_DETAILS.dateFormatted.toUpperCase()}
-          </p>
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '6px',
-              marginTop: '0.5rem',
-            }}
-          >
-            <span style={{ width: 4, height: 4, transform: 'rotate(45deg)', backgroundColor: 'var(--color-champagne-gold)' }} />
-            <span style={{ width: 6, height: 6, transform: 'rotate(45deg)', backgroundColor: 'var(--color-champagne-gold)' }} />
-            <span style={{ width: 4, height: 4, transform: 'rotate(45deg)', backgroundColor: 'var(--color-champagne-gold)' }} />
-          </div>
+        {/* Decorative Diamond Accent Divider */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            margin: '1rem 0 2rem',
+          }}
+        >
+          <div style={{ width: 35, height: 1, background: 'linear-gradient(90deg, transparent, var(--color-champagne-gold))' }} />
+          <span style={{ width: 6, height: 6, transform: 'rotate(45deg)', backgroundColor: 'var(--color-champagne-gold)' }} />
+          <div style={{ width: 35, height: 1, background: 'linear-gradient(90deg, var(--color-champagne-gold), transparent)' }} />
         </div>
 
         {/* Prominent "OPEN INVITATION" button with breathing glow */}
